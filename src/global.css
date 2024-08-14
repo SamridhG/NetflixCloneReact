@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;900&display=swap");
+
+@font-face {
+  font-family: "URW Geometric Regular";
+  src: url("/URWGeometricRegular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "URW Geometric";
+  src: url("/URWGeometricSemiBold.otf");
+  font-weight: 500;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black leading-[normal] m-0;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+}
+/* Add this to your global CSS file */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
